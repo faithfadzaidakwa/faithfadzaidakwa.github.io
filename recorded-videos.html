@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recorded Videos | Faith Dakwa</title>
+  <style>
+    /* Shared styles */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #9b59b6, #e91e63);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 1rem;
+    }
+    nav {
+      width: 100%;
+      max-width: 900px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 12px;
+      margin: 1rem auto 2rem;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0.75rem 1rem;
+      justify-content: center;
+      gap: 2rem;
+    }
+    nav a {
+      color: #fce4ec;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      padding: 0.25rem 0.5rem;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover,
+    nav a.active {
+      background-color: #f48fb1;
+      color: #4a148c;
+    }
+    .container {
+      max-width: 900px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+      backdrop-filter: blur(10px);
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 2px solid #f48fb1;
+      padding-bottom: 0.25rem;
+      text-align: center;
+    }
+    .video-post {
+      margin-bottom: 2rem;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .video-post h3 {
+      margin-top: 0;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      color: #fce4ec;
+    }
+    .video-post p {
+      color: #fce4ec;
+      margin-bottom: 1rem;
+      line-height: 1.5;
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 ratio */
+      height: 0;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+    .video-container iframe,
+    .video-container video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+    }
+    footer {
+      margin: 3rem auto 1rem;
+      max-width: 900px;
+      color: #f8bbd0;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="recorded-videos.html" class="active">Recorded Videos</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <h2>Recorded Videos</h2>
+
+    <article class="video-post">
+      <h3>AWS: Creating and Securing an AWS Management Account </h3>
+      <p>Learn how to create a AWS Account , Secure it with MFA and Add a Budget to the Management Account.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/3hLmDS179YE" title="Creating and Securing an AWS Account" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </article>
+
+    <article class="video-post">
+      <h3>AWS: Creating an Admin User to your Management Account </h3>
+      <p>Never ever use your Root user for day to day tasks thats what we use the admin users for .</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Oe421EPjeBE" title="Creating an Admin User to your Management Account" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+    </article><article class="video-post">
+      <h3>AWS: Creating and Securing an AWS Production Account</h3>
+      <p>Learn how to create a AWS Production Account , Secure it with MFA and Add a Budget to the Production Account.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Oe421EPjeBE" title="Creating and Securing an AWS Production Account" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </article>
+
+    <article class="video-post">
+      <h3>AWS: Creating An Organisation</h3>
+      <p>We create an Organisation to enable consolidated billing for all the accounts in your AWS Environment</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Oe421EPjeBE" title="Creating An Organisation" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </article>
+
+     <article class="video-post">
+      <h3>AWS: Using Service Control policies(SCP)</h3>
+      <p>Explore how Service control Policies affect the use of Accounts in your Organisation</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Oe421EPjeBE" title="Using Service Control policies(SCP)" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </article>
+
+    <article class="video-post">
+      <h3>AWS: Policy Interpretation </h3>
+      <p>Its one thing to know what policies do but it a completely different ball game being able to truly understand it  </p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Oe421EPjeBE" title="Policy Interpretation" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </article>
+
+    <article class="video-post">
+      <h3> AWS: Cross Account Access to S3 (ACL , BUCKET POLICY , ROLES)</h3>
+      <p>Explore ways that you can use Cross Account Access into S3.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Oe421EPjeBE" title="Cross Account Access to S3 (ACL , BUCKET POLICY , ROLES)" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </article>
+
+    <article class="video-post">
+      <h3>AWS: Adding Single Sign-On to an Organisation</h3>
+      <p>Explore strategies for securing cloud infrastructure, identity management, and compliance standards.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Oe421EPjeBE" title="Adding Single Sign-On to an Organisation" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </article>
+
+    <article class="video-post">
+      <h3>AWS Mini Project : Implementing Web Identity Federation </h3>
+      <p>Explore strategies for securing cloud infrastructure, identity management, and compliance standards.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Oe421EPjeBE" title="Mini Project : Implementing Web Identity Federation " frameborder="0" allowfullscreen></iframe>
+      </div>
+    </article>
+
+    <article class="video-post">
+      <h3>AWS Mini Project : Implementing a Hybrid Directory Solution in AWS </h3>
+      <p>Explore strategies for securing cloud infrastructure, identity management, and compliance standards.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Oe421EPjeBE" title="Mini Project : Implementing a Hybrid Directory Solution in AWS " frameborder="0" allowfullscreen></iframe>
+      </div>
+    </article>
+
+    <article class="video-post">
+      <h3>AWS: Advanced Site to Site VPN </h3>
+      <p>Explore strategies for securing cloud infrastructure, identity management, and compliance standards.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Oe421EPjeBE" title="Advanced Site to Site VPN " frameborder="0" allowfullscreen></iframe>
+      </div>
+    </article>
+
+    <article class="video-post">
+      <h3>AWS: Client VPN </h3>
+      <p>Explore strategies for securing cloud infrastructure, identity management, and compliance standards.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Oe421EPjeBE" title="Client VPN" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </article>
+
+    <article class="video-post">
+      <h3>AWS: Register a Domain with Route53</h3>
+      <p>Explore strategies for securing cloud infrastructure, identity management, and compliance standards.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Oe421EPjeBE" title="Register a Domain with Route53" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </article>
+
+    <article class="video-post">
+      <h3>AWS: Using Route 53 and Failover Routing</h3>
+      <p>Explore strategies for securing cloud infrastructure, identity management, and compliance standards.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Oe421EPjeBE" title="Using Route 53 and Failover Routing" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </article>
+
+    <article class="video-post">
+      <h3>AWS Mini Project : Hybrid R53 and On-premises DNS</h3>
+      <p>Explore strategies for securing cloud infrastructure, identity management, and compliance standards.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Oe421EPjeBE" title="Mini Project : Hybrid R53 and On-premises DNS" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </article>
+
+    <article class="video-post">
+      <h3>AWS: Implementing EFS</h3>
+      <p>Explore strategies for securing cloud infrastructure, identity management, and compliance standards.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Oe421EPjeBE" title="Implementing EFS" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </article>
+
+    <article class="video-post">
+      <h3>AWS: Cross Region Replication of Static S3 Website</h3>
+      <p>Explore strategies for securing cloud infrastructure, identity management, and compliance standards.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Oe421EPjeBE" title="Cross Region Replication of Static S3 Website" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </article>
+
+    <article class="video-post">
+      <h3>AWS: Implementing Organisational Trail </h3>
+      <p>Explore strategies for securing cloud infrastructure, identity management, and compliance standards.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Oe421EPjeBE" title="Implementing Organisational Trail" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </article>
+
+    <article class="video-post">
+      <h3>AWS Amazon Athena</h3>
+      <p>Explore strategies for securing cloud infrastructure, identity management, and compliance standards.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Oe421EPjeBE" title="Amazon Athena<" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </article>
+
+    <article class="video-post">
+      <h3>AWS: Creating Docker Image</h3>
+      <p>Explore strategies for securing cloud infrastructure, identity management, and compliance standards.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Oe421EPjeBE" title="Creating Docker Image" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </article>
+
+    <article class="video-post">
+      <h3>AWS: Deploying Docker Container Image using Fargate </h3>
+      <p>Explore strategies for securing cloud infrastructure, identity management, and compliance standards.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Oe421EPjeBE" title="Deploying Docker Container Image using Fargate" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </article>
+
+    <article class="video-post">
+      <h3>AWS Mini Project : Building a Serverless App</h3>
+      <p>Explore strategies for securing cloud infrastructure, identity management, and compliance standards.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Oe421EPjeBE" title="Mini Project : Building a Serverless App" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </article>
+
+
+    <article class="video-post">
+      <h3>AWS: Adding Cloudfront Capabilities to a Static S3 website </h3>
+      <p>Explore strategies for securing cloud infrastructure, identity management, and compliance standards.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Oe421EPjeBE" title="Adding Cloudfront Capabilities to a Static S3 website " frameborder="0" allowfullscreen></iframe>
+      </div>
+    </article>
+
+    <article class="video-post">
+      <h3>AWS: Using Origin Access Control </h3>
+      <p>Explore strategies for securing cloud infrastructure, identity management, and compliance standards.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Oe421EPjeBE" title="Using Origin Access Control " frameborder="0" allowfullscreen></iframe>
+      </div>
+    </article>
+
+    <article class="video-post">
+      <h3>AWS Database Migration Service (DMS)</h3>
+      <p>Explore strategies for securing cloud infrastructure, identity management, and compliance standards.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Oe421EPjeBE" title="Database Migration Service (DMS)" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </article>
+
+    <article class="video-post">
+      <h3>AWS CloudFormation : Wait conditions  </h3>
+      <p>Explore strategies for securing cloud infrastructure, identity management, and compliance standards.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Oe421EPjeBE" title="Using Origin Access Control " frameborder="0" allowfullscreen></iframe>
+      </div>
+    </article>
+
+    <article class="video-post">
+      <h3>AWS CloudFormation : cfnsignal  </h3>
+      <p>Explore strategies for securing cloud infrastructure, identity management, and compliance standards.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Oe421EPjeBE" title="Using Origin Access Control " frameborder="0" allowfullscreen></iframe>
+      </div>
+    </article>
+
+    <article class="video-post">
+      <h3>AWS CloudFormation : cfninit </h3>
+      <p>Explore strategies for securing cloud infrastructure, identity management, and compliance standards.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Oe421EPjeBE" title="Using Origin Access Control " frameborder="0" allowfullscreen></iframe>
+      </div>
+    </article>
+
+    <article class="video-post">
+      <h3>AWS CloudFormation : cfnhup </h3>
+      <p>Explore strategies for securing cloud infrastructure, identity management, and compliance standards.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Oe421EPjeBE" title="Using Origin Access Control " frameborder="0" allowfullscreen></iframe>
+      </div>
+    </article>
+
+    <article class="video-post">
+      <h3>AWS CloudFormation : Custom Resources</h3>
+      <p>Explore strategies for securing cloud infrastructure, identity management, and compliance standards.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Oe421EPjeBE" title="Using Origin Access Control " frameborder="0" allowfullscreen></iframe>
+      </div>
+    </article>
+
+    <article class="video-post">
+      <h3>AWS:Elastic Beanstalk</h3>
+      <p>Explore strategies for securing cloud infrastructure, identity management, and compliance standards.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Oe421EPjeBE" title="Using Origin Access Control " frameborder="0" allowfullscreen></iframe>
+      </div>
+    </article>
+
+    <article class="video-post">
+      <h3>AWS:Systems Manager </h3>
+      <p>Explore strategies for securing cloud infrastructure, identity management, and compliance standards.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Oe421EPjeBE" title="Using Origin Access Control " frameborder="0" allowfullscreen></iframe>
+      </div>
+    </article>
+
+    <article class="video-post">
+      <h3>AWS:KMS</h3>
+      <p>Explore strategies for securing cloud infrastructure, identity management, and compliance standards.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Oe421EPjeBE" title="Using Origin Access Control " frameborder="0" allowfullscreen></iframe>
+      </div>
+    </article>
+
+    <article class="video-post">
+      <h3>AWS: VPC Flow Logs</h3>
+      <p>Explore strategies for securing cloud infrastructure, identity management, and compliance standards.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Oe421EPjeBE" title="VPC Flow Logs" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </article>
+
+    <article class="video-post">
+      <h3>Azure: Basic Web App Deployment</h3>
+      <p>Deploying a simple web application to Azure App Service. .</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Oe421EPjeBE" title="Using Origin Access Control " frameborder="0" allowfullscreen></iframe>
+      </div>
+    </article>
+
+    <article class="video-post">
+      <h3>Azure: Storage for file Management </h3>
+      <p>Utilizing Azure Blob Storage for storing and managing files.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Oe421EPjeBE" title="Using Origin Access Control " frameborder="0" allowfullscreen></iframe>
+      </div>
+    </article>
+
+    <article class="video-post">
+      <h3>Azure: Building Secure APIs</h3>
+      <p>Developing secure APIs for data processing and other functionalities.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Oe421EPjeBE" title="Using Origin Access Control " frameborder="0" allowfullscreen></iframe>
+      </div>
+    </article>
+
+    <!-- Add more video posts here -->
+  </main>
+
+  <footer>
+    &copy; 2025 Faith Dakwa. All rights reserved.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Faith Dakwa | Home</title>
+  <style>
+    /* Shared Styles */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #9b59b6, #e91e63);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 1rem;
+    }
+    nav {
+      width: 100%;
+      max-width: 900px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 12px;
+      margin: 1rem auto 2rem;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0.75rem 1rem;
+      justify-content: center;
+      gap: 2rem;
+    }
+    nav a {
+      color: #fce4ec;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      padding: 0.25rem 0.5rem;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover,
+    nav a.active {
+      background-color: #f48fb1;
+      color: #4a148c;
+    }
+    .container {
+      max-width: 900px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+      backdrop-filter: blur(10px);
+      text-align: center;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.25rem;
+      letter-spacing: 2px;
+    }
+    p.subtitle {
+      font-size: 1.3rem;
+      font-style: italic;
+      color: #f8bbd0;
+      margin-top: 0;
+      margin-bottom: 2rem;
+    }
+    a.cta-button {
+      display: inline-block;
+      background: #f48fb1;
+      color: #4a148c;
+      padding: 0.75rem 1.5rem;
+      font-weight: 700;
+      font-size: 1.2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 6px 15px rgba(244,143,177,0.6);
+      transition: background-color 0.3s ease;
+    }
+    a.cta-button:hover {
+      background: #e91e63;
+      color: #fff;
+      box-shadow: 0 8px 20px rgba(233,30,99,0.8);
+    }
+
+    footer {
+      margin: 3rem auto 1rem;
+      max-width: 900px;
+      color: #f8bbd0;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="recorded-videos.html">Recorded Videos</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <h1>Faith Dakwa</h1>
+    <p class="subtitle">Cloud Solutions Architect | Cyber Security Enthusiast| Video Creator</p>
+    <p>Welcome to my personal website where I share a little about myself, projects, and videos where I walk through demos of interesting topics in cloud architecture ( AWS , Azure and More )</p>
+
+    <p>Here is a Snapshot of the Face behind the Videos , Nice to meet you!</p>
+    <img src="images/faithimage.jpg" alt="Description of image" style="width: 80%; max-width: 800px; height: auto; border-radius: 12px; margin-top: 1rem;" />
+
+
+    <a href="projects.html" class="cta-button" aria-label="View Projects">Explore My Work</a>
+  </main>
+
+  <footer>
+    &copy; 2025 Faith Dakwa. All rights reserved.
+  </footer>
+</body>
+</html>
